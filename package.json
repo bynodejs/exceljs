@@ -1,0 +1,15 @@
+{
+  "name": "exceljs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AGUMON",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^2.0.1",
+    "readline-sync": "^1.4.10"
+  }
+}
