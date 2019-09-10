@@ -1,22 +1,29 @@
 'use strict';
 
-// require modules
 const Excel = require('exceljs'),
     readline = require('readline-sync');
 
 let userInput = false;
 
 const data = [
-    { id: 1, name: 'hi' },
-    { id: 2, name: 'bye' }
+    { name: '버터와플', price: 1500 },
+    { name: '초코송이', price: 1200 },
+    { name: '롯데샌드', price: 2200 },
+    { name: '포스틱', price: 2000 },
+    { name: '제크', price: 1800 },
+    { name: '꿀탕콩', price: 1200 },
+    { name: '맛동산', price: 800 },
+    { name: '자갈치', price: 1000 },
+    { name: '새우깡', price: 1500 },
+    { name: '포카칩', price: 1800 }
 ];
 
 async function makeExcel(data) {
 
     let excel_data = await data.map(val => {
         return {
-            '아이디': val.id,
-            '이름': val.name
+            '과자명': val.name,
+            '가격': `${val.price}원`
         };
     });
 
